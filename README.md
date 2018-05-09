@@ -44,7 +44,7 @@ console.log(safe);
 ```
 
 ### Overriding sanitize-html Options
-ting is built upon Built upon [sanitize-html](https://www.npmjs.com/package/sanitize-html), you can override the internal sanitize-html options, or pass a new one (which makes ting no different than sanitize-html). e.g. to allow `<iframe>` tags, override the `allowedTags` and `allowedAttributes` of sanitize-html options.
+ting is built upon [sanitize-html](https://www.npmjs.com/package/sanitize-html), you can override the internal sanitize-html options, or pass a new one (which makes ting no different than sanitize-html). e.g. to allow `<iframe>` tags, override the `allowedTags` and `allowedAttributes` of sanitize-html options.
 
 ```js
 sanitize('<iframe src="https://coldfunction.com"></iframe>', 
