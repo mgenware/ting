@@ -1,0 +1,32 @@
+{
+  "name": "ting",
+  "version": "1.0.0",
+  "description": "Opinionated HTML Sanitizer for Node.js",
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
+  "author": "Mgen (https://github.com/mgenware)",
+  "homepage": "https://github.com/mgenware/ting",
+  "bugs": "https://github.com/mgenware/ting/issues",
+  "keywords": [
+    "html sanitizer",
+    "sanitize html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgenware/ting.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "yarn run test"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
+  "dependencies": {
+    "sanitize-html": "^1.18.2"
+  }
+}
