@@ -1,6 +1,6 @@
 {
   "name": "ting",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Opinionated HTML Sanitizer for Node.js",
   "main": "lib/main.js",
   "author": "Mgen (https://github.com/mgenware)",
