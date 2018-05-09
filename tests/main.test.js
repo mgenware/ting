@@ -9,3 +9,11 @@ test('<img>', () => {
 test('No <iframe>', () => {
   expect(sanitize('<iframe src="https://coldfunction.com"></iframe>')).toBe('');
 });
+
+test('Override options', () => {
+  expect(sanitize('<iframe src="https://coldfunction.com"></iframe>', undefined, (opts) => {
+    opts.allowedTags.push('iframe');
+    opts.allowedAttributes.iframe = ['src'];
+    return opts;
+  })).toBe('<iframe src="https://coldfunction.com"></iframe>');
+});
