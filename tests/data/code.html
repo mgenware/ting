@@ -1,0 +1,11 @@
+<pre><code class="lang-javascript">const fs = require('fs');
+
+    return new Promise((resolve, reject) =&gt; {
+        fs.readFile('a.txt', 'utf8', (err, data) =&gt; {
+            if (err !== null) {
+                return reject(err);
+            }
+            resolve(data);
+        });
+    });
+    </code></pre>
