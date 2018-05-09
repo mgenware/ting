@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "Opinionated HTML Sanitizer for Node.js",
   "main": "lib/main.js",
-  "types": "lib/main.d.ts",
   "author": "Mgen (https://github.com/mgenware)",
   "homepage": "https://github.com/mgenware/ting",
   "bugs": "https://github.com/mgenware/ting/issues",
