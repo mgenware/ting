@@ -1,5 +1,5 @@
-module.exports = {
-  allowedTags: [ 
+export default {
+  allowedTags: [
     'a',
     'article',
     'aside',
