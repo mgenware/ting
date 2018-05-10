@@ -57,7 +57,7 @@ console.log(safe);
 }
 ```
 
-* Example: allow all `id`s starting with `user-content-`:
+* Example: allow all `id`s starting with `"user-content-"`:
 ```js
 ting.sanitize(`
 <a id="id-attack">bad</a>
@@ -74,7 +74,7 @@ ting.sanitize(`
 ```
 
 ### Overriding sanitize-html Options
-ting is built upon [sanitize-html](https://www.npmjs.com/package/sanitize-html), you can override the internal sanitize-html options, or pass a new one (which makes ting no different than sanitize-html). e.g. to allow `<iframe>` tags, override the `allowedTags` and `allowedAttributes` of sanitize-html options.
+ting is built upon [sanitize-html](https://www.npmjs.com/package/sanitize-html), you can override the internal sanitize-html options, or pass a new one (which would make ting no different than sanitize-html). e.g. to allow `<iframe>` tags, override the `allowedTags` and `allowedAttributes` of sanitize-html options.
 
 ```js
 ting.sanitize('<iframe src="https://coldfunction.com"></iframe>', 
