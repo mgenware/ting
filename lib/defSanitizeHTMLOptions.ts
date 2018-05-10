@@ -67,7 +67,7 @@ export default {
 
   allowedAttributes: {
     // Note that some tags are not allowed by default
-    '*': ['class', 'align', 'valign', 'title'],
+    '*': ['class', 'align', 'valign', 'title', 'id'],
     a: [ 'href', 'name', 'target', 'aria-hidden', 'rel' ],
     del: ['cite', 'datetime'],
     iframe: ['src', 'frameborder', 'allowfullscreen'],

@@ -28,3 +28,15 @@ test('Code', async () => {
   const html = await readTestFileAsync('code');
   expect(sanitize(html)).toBe(html);
 });
+
+test('ID is not allowed by default', async () => {
+  expect(sanitize('<a id="bad">2</a><a id="m-a">2</a><a>3</a><stupid id="m-b">4</stupid>')).toBe('<a>3</a>4');
+});
+
+test('ID Filter', async () => {
+  expect(sanitize('<a id="bad">2</a><a id="m-a">2</a><a>3</a><stupid id="m-b">4</stupid>', {
+    idFilter: (id) => {
+      return id.startsWith('m-');
+    },
+  })).toBe('<a id="m-a">2</a><a>3</a>4');
+});
