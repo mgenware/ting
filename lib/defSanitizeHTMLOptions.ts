@@ -40,7 +40,6 @@ export default {
     'nav',
     'ol',
     'p',
-    'path',
     'pre',
     'progress',
     'rp',
@@ -53,7 +52,6 @@ export default {
     'sub',
     'summary',
     'sup',
-    'svg',
     'table',
     'tbody',
     'td',
@@ -77,8 +75,6 @@ export default {
     meta: ['name', 'content'],
     td: ['colspan', 'rowspan'],
     th: ['colspan', 'rowspan'],
-    path: ['d'],
-    svg: ['aria-hidden', 'height', 'version', 'viewbox', 'width'],
   },
 
   // *** The following is copied from sanitize-html's default options ***
