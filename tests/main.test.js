@@ -24,7 +24,7 @@ test('Override options', () => {
   })).toBe('<iframe src="https://coldfunction.com"></iframe>');
 });
 
-test('Code', async () => {
+test('Code element', async () => {
   const html = await readTestFileAsync('code');
   expect(sanitize(html)).toBe(html);
 });
@@ -39,4 +39,13 @@ test('ID Filter', async () => {
       return id.startsWith('m-');
     },
   })).toBe('<a id="m-a">2</a><a>3</a>4');
+});
+
+test('SVG element', async () => {
+  const svg = `<svg width="160" height="140" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <line x1="40" x2="120" y1="20" y2="20" stroke="black" stroke-width="20" stroke-linecap="butt"/>
+  <line x1="40" x2="120" y1="60" y2="60" stroke="black" stroke-width="20" stroke-linecap="square"/>
+  <line x1="40" x2="120" y1="100" y2="100" stroke="black" stroke-width="20" stroke-linecap="round"/>
+</svg>`;
+  expect(sanitize(svg).trim()).toBe('');
 });
