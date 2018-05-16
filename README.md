@@ -11,8 +11,8 @@ Opinionated HTML Sanitizer for Node.js. Built upon [sanitize-html](https://www.n
 * `<iframe>` is not allowed.
 * `style` attribute is not allowed.
 * `id` attribute is not allowed unless `idFilter` returns true (see [Options](#options)).
-* Inline SVG is not allowed (`<img>` with an external SVG file is fine).
-* Use of internal [sanitize-html](https://www.npmjs.com/package/sanitize-html) options is supported.
+* Inline SVG is not allowed (use `<img>` with an external SVG source).
+* Customizable via [sanitize-html](https://www.npmjs.com/package/sanitize-html) options.
 * TypeScript friendly.
 
 ## Installation
