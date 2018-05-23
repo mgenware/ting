@@ -54,3 +54,9 @@ test('SVG as an image', async () => {
   const svg = '<img src="./test.svg" />';
   expect(sanitize(svg)).toBe('<img src="./test.svg" />');
 });
+
+test('Headings', async () => {
+  const html = '<h1>1</h1><h2>2</h2><h3>3</h3><h4>4</h4><h5>5</h5><h6>6</h6><h7>7</h7>';
+  const right = '<h1>1</h1><h2>2</h2><h3>3</h3><h4>4</h4><h5>5</h5><h6>6</h6>7';
+  expect(sanitize(html)).toBe(right);
+});
