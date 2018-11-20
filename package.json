@@ -1,6 +1,6 @@
 {
   "name": "ting",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Opinionated HTML Sanitizer for Node.js",
   "main": "./dist/main.js",
   "types": "./dist/main.d.ts",
