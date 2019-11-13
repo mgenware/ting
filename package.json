@@ -1,6 +1,6 @@
 {
   "name": "ting",
-  "version": "2.4.4",
+  "version": "2.5.0",
   "description": "Opinionated HTML Sanitizer for Node.js",
   "main": "./dist/main.js",
   "types": "./dist/main.d.ts",
@@ -38,11 +38,11 @@
   "devDependencies": {
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.7",
+    "@types/sanitize-html": "^1.20.2",
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
     "tslint": "^5.20.1",
-    "typescript": "^3.7.2",
-    "@types/sanitize-html": "^1.20.2"
+    "typescript": "^3.7.2"
   },
   "dependencies": {
     "sanitize-html": "^1.20.1"
